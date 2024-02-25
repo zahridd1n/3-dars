@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url('{%static 'img/bg.jpg'%}') no-repeat ;
+            background-size: cover;
+            background-position:top;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .team{
+            margin: 0;
+            padding: 10px 0;
+            max-width: 100%;
+            min-height: 717px;
+            background-color: hsla(0, 0%, 0%, 0.61);
+        }
+
+        .team-title{
+            margin: 0 50px 26px 50px;
+            padding: 40px 50px 30px 50px;
+            text-align: center;
+            /* border-bottom: 3px solid white; */
+        }
+
+        .team-title-bottom{
+            margin-left: 36.5%;
+            width: 389px;
+            height: 5px;
+            border-top: 3px solid white;
+        }
+
+        .about-team{
+            max-width:100%;
+            min-height: 170px;
+            padding: 10px;
+            margin: 0 270px;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+        }
+        .conti{
+            display: flex;
+            justify-content: center;
+        }
+
+        .team.container{
+            position: relative;
+            right: 20px;
+            width: 1235px;
+            height: 360px;
+            margin-left: 10px;
+        }
+        .people-team{
+            margin: 40px 40px 0 40px;
+            width: 250px;
+            max-height: 800px;
+            text-align: center;
+            float: left;
+        }
+
+        .img1, .img2, .img3, .img4{
+            width: 250px;
+            height: 250px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background: url('{%static 'img/img1.jpg'%}') center no-repeat;
+            background-size: cover;
+        }
+        .img2{
+            background: url('{%static 'img/img2.webp'%}') center no-repeat ;
+            background-size: cover;
+        }
+        .img3{
+            background: url('{%static 'img/img3.jpg'%}') center no-repeat ;
+            background-size: cover;
+        }
+        .img4{
+            background: url('{%static 'img/img4.jpg'%}') center no-repeat ;
+            background-size: cover;
+        }
+        .name, .position{
+            margin: 5px 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <section class="team">
+        <div class="team-title">
+            <h1> MEET OUR TEAM</h1>
+            <div class="team-title-bottom"></div>
+        </div>
+        
+        <p class="about-team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Minus eveniet veniam saepe reprehenderit sequi,
+                 sint tempore illum et delectus explicabo fugit eligendi, 
+                 maiores culpa dignissimos aperiam perferendis optio animi odio eius autem quod reiciendis dolore? 
+                Aperiam error maiores reprehenderit tempora. Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+        <div class="conti">      
+            <div class="team-container">
+                <div class="people-team">
+                    <div class="img1"></div>
+                    <h2 class="name"> Zaxiriddin</h2>
+                    <h3 class="position">Fronted Dev.</h3>
+                </div>
+                <div class="people-team">
+                    <div class="img2"></div>
+                    <h2 class="name"> Kozimjon</h2>
+                    <h3 class="position">SMM Menenjer</h3>
+                </div>
+                <div class="people-team">
+                    <div class="img3"></div>
+                    <h2 class="name"> Anvar Jabborov</h2>
+                    <h3 class="position">Backend Dev.</h3>
+                </div>
+                <div class="people-team">
+                    <div class="img4"></div>
+                    <h2 class="name"> Nazokat</h2>
+                    <h3 class="position">Designer</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
